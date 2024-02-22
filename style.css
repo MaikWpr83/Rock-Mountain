@@ -1,0 +1,261 @@
+body{
+    margin: 0px;
+    font-family: 'PT Sans', sans-serif;
+    color: #ffffff;
+}
+
+.aot{
+    background-image: url('./img/header.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+header img{
+    width: 200px;
+}
+
+.navLink {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navLink:hover{
+    color: #B48A4E;
+}
+
+.nav_img{
+    height: 25px;
+    width: auto;
+    margin-left: 16px;
+}
+
+.nav_img:hover{
+    filter: drop-shadow(0px 0px 4px #ffffff);
+    cursor: pointer;
+}
+
+h1{
+    font-size: 84px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: 'viga';
+    font-weight: 100;
+    text-align: center;
+}
+
+.button{
+    background-color: #B48A4E;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px;
+}
+
+.mt-16{
+    margin-top: 20px;
+}
+
+.sektion-quicklinks{
+    background-color: black;
+    padding: 80px 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.quicklink{
+    color: #B48A4E;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    gap: 8px;
+    /*width: 30%;*/
+    flex: 1;
+}
+
+.quicklink img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.buy-ticket-section{
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+}
+
+.buy-ticket-img-left{
+    height: 280px;
+}
+
+.festival-info{
+    padding: 40px;
+    height: 200px;
+    flex: 1;
+    text-align: center;
+}
+
+.festival-info h2{
+    margin-block-start: 0px;
+}
+
+.seperator{
+    background-color: #ffffff;
+    width: 1px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.buy-ticket-container{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.follow-and-listen{
+    color: #B48A4E;
+    padding: 80px 80px;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.video-section{
+    background-image: url('./img/bottom.png');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    padding: 80px 80px;
+}
+
+.half-width{
+    width: 50%;
+}
+
+.footer-social-media-icon{
+    width: 32px;
+}
+
+.footer-left{
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 16px;
+}
+
+.footer-center{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 16px;
+}
+
+input{
+    height: 41px;
+    flex-grow: 1;
+}
+
+input::placeholder{
+    color: rgba(0,0,0,0.4);
+    padding-left: 16px;
+}
+
+.button-footer{
+    width: 200px;
+    border-width: 0px;
+}
+
+.footer-form{
+    display: flex;
+}
+
+@media(max-width: 714px){
+    .hide-mobile{
+        display: none;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+}
+
+@media(max-width: 600px){
+    .sektion-quicklinks{
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full-width-mobile{
+        width: 100%;
+    }
+
+    .footer-left{
+        text-align: center;
+        margin-bottom: 32px;
+        padding-right: 0;
+    }
+}
+
+@media(max-width: 950px){
+    .buy-ticket-section{
+        flex-direction: column;
+    }
+
+    .buy-ticket-img-left{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .seperator{
+        display: none;
+        /*width: 200px;
+        height: 1px;
+        margin-right: 0px;
+        margin-bottom: 16px;*/
+    }
+
+    .buy-ticket-container{
+        padding-bottom: 40px;
+    }
+
+    .buy-ticket-container button{
+        width: 100%;
+        text-align: center;
+    }
+
+    p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+}
